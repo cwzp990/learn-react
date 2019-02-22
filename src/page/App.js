@@ -1,11 +1,23 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import './App.css'
+import Weather from '../components/weather/weather'
+import './App.less'
 
 class App extends Component {
-  render () {
+  render() {
     return (
-      <h1 className="title">Hello World</h1>
+      <div className="box">
+        <div className="up">
+          <Weather />
+        </div>
+        <div className="down">
+          <Weather />
+          <Weather />
+          <Weather />
+          <Weather />
+          <Weather />
+        </div>
+      </div>
     )
   }
 }
